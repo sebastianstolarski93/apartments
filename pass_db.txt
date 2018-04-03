@@ -1,0 +1,3 @@
+bd_name: netplace_apartments
+us_name: netplace_apartments
+us_pass: 0S]dB@9ZAt=}
