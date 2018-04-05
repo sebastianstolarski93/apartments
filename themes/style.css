@@ -132,3 +132,96 @@ body > header {
                         font: 14px/38px 'Lato', sans-serif;
                         padding: 0 12px;
                     }
+/* navbar */
+nav.usability-links {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+    nav.usability-links a {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        margin: 0 20px 0 0;
+        font: 14px/40px 'Lato', sans-serif;
+        color: #555;
+        text-decoration: none;
+    }
+        nav.usability-links a:hover::before  {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            top: 80%;
+            left: 0;
+            right: 0;
+            background-color: #E65E43;            
+        }
+
+.us-apartments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 0;
+}
+    .us-apartments h1 {
+        display: block;
+        padding: 20px 0;
+        text-align: center;
+        font: 28px/40px 'Lato', sans-serif;
+        color: #E65E43;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .us-apartments .container {
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+        .us-apartments .container .apartments-item {
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            margin-bottom: 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+            .us-apartments .apartments-item h2 {
+                display: flex;
+                justify-content: center;
+                margin: 0 0 10px;
+                font: 16px/30px 'Lato', sans-serif;
+                color: #E65E43;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: 700;
+            }
+            .us-apartments .apartments-item img {
+                display: flex;
+                margin-bottom: 20px;
+                min-width: 100%;
+                height: auto;
+            }
+            .us-apartments .apartments-item ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                text-align: left;
+            }
+                .us-apartments .apartments-item ul li {
+                    display: flex;
+                    margin-bottom: 12px;
+                    color: #555;
+                }
+                    .us-apartments .apartments-item ul li::before {
+                        content: '\f45c';
+                        display: inline-block;
+                        vertical-align: top;
+                        margin: 0 10px 0 0;
+                        font: 1em/100% 'Font Awesome 5 Solid';
+                    }
