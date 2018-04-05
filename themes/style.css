@@ -1,0 +1,134 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* main styles */
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0 10px;
+    background: #E65E43;
+    border: 0;
+    font: 14px/38px 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 400ms;
+    color: #fff;
+    cursor: pointer;
+}
+    .btn:hover {
+        background: #E67863;
+        transition: all 400ms;
+    }
+
+/* header style */
+
+body > header {
+    min-height: 100vh;
+}
+    header .banner {
+        background:#999;
+    }
+        header .banner nav {
+            position: fixed;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.3);
+            text-align: right;
+        }
+            header .banner nav a {
+                display: inline-block;
+                vertical-align: top; 
+                padding: 0 10px;
+                color: #fff;
+                font: 14px/34px 'Lato', sans-serif;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        header .banner .booking-at-baner {
+            display: flex;
+            height: 100vh;
+            padding-top: 34px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+            header .banner .booking-at-baner h1 {
+                font: 32px/56px 'Lato', sans-serif;
+                color: #fff;
+            }
+            header .banner .booking-at-baner h2 {
+                font: 24px/56px 'Lato', sans-serif;
+                color: #fff;
+            }
+            header .banner .booking-at-baner form {
+                display: flex;
+                flex-direction: row;
+                align-content: space-between;
+                padding: 10px 6px;
+                background: rgba(0, 0, 0, .4);
+            }
+                header .banner .booking-at-baner form fieldset {
+                    background-color: #fff;
+                    margin: 0 6px;
+                    font: 14px/38px 'Lato', sans-serif;
+                }
+                    header .banner .booking-at-baner form fieldset span {
+                        display: inline-block;
+                        font: 14px/38px 'Lato', sans-serif;
+                        padding: 0 12px;
+                    }
